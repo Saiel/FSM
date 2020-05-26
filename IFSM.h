@@ -22,7 +22,7 @@ public:
 		delete m_finalStates;
 	}
 
-		virtual Return_t process(const Iter beg, const Iter end) {
+	virtual Return_t process(const Iter beg, const Iter end) {
 		for (Iter it = beg; it != end; ++it) {
 			Return_t r = m_process(it);
 			if (m_returnCondition(r))
